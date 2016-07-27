@@ -1,0 +1,5 @@
+__version__     = '0.1'
+__title__       = 'system_profiler'
+__author__      = 'Filipp Lepalaan'
+__license__     = 'MIT'
+__copyright__   = 'Copyright 2016 Filipp Lepalaan'
