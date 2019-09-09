@@ -51,7 +51,8 @@ def main(outfile):
 
     tab0 = Table([name, version, moddate, path],
                  names=('Name','version','ModifiedDate','path'))
+    tab0.sort('Name')
 
-    tab0.write(outfile, format='ascii.fixed_width_two_line')
+    tab0.write(outfile, format='ascii.fixed_width_two_line', overwrite=True)
 #enddef
 
