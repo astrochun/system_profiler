@@ -45,7 +45,10 @@ def main(outfile):
     for ii in range(n_apps):
         t_app       = apps_dict[ii]
         name[ii]    = t_app['_name']
-        version[ii] = t_app['version']
+        try:
+            version[ii] = t_app['version']
+        except KeyError:
+            version[ii] = 'N/A'
         moddate[ii] = t_app['lastModified'].strftime('%m-%d-%y')
         path[ii]    = t_app['path']
 
